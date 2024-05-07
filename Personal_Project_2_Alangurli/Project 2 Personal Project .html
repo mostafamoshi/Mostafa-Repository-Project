@@ -6,7 +6,71 @@
     <meta name="viewport" content="width=device-width, intital-scale=1"/>
     <meta name="description" content="Malcolm X was a spokesman for the nation of Islam from 1952&ndash;1964."/>
     <style>
-        * {outline:1px solid blue;}
+       <style>
+      /* box-sizing */ 
+		html {
+			box-sizing:border-box;
+		}
+		*, *:before, *:after {
+			box-sizing:inherit;
+		}
+		
+		/* STRUCTURE */
+		body {background-color:#456;}
+		#wrap {background-color:#ddd; width:100%; max-width;800px; margin:0 auto 0 auto;}
+		header {background-color:#444; color:white;}
+		footer {background-color:#444; color:white;}
+		header, section, footer {padding:20px 60px;}
+		figure {margin:0;}
+		
+		/*FLOATS */
+		.fr300 {width: 100%; max-width:300px; float:right; margin-left:20px; margin-bottom:20px;}
+		
+		.fr200 {width: 100%; max-width:200px; float:right; margin-left:20px; margin-bottom:20px;}
+		
+		.fl200 {width: 100%; max-width:200px; float:left; margin-right:20px; margin-bottom:20px;}
+		
+		.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+		
+		/* IMAGES */
+		img {width:100%; margin-bottom:6px;}
+		
+		/* TYPOGRAPHY */
+		body {font-family:arial, helvetica,sans-serif;}
+		h1 {font-size:36px;}
+		figcaption {font-style:italic; font-size:14px;}
+		ul {padding-left;16px;}
+		li {margin-bottom:8px;}
+		header p {line-height:1.4}
+		figcaption {line-height:1.4}
+
+		
+		/* NAV TYPE */
+		nav ul {padding-left:0;}
+		nav li {list-style:none; display:inline-block; margin-right:6px;}
+		
+		/* LINKS */
+		a:link {color:#aaa; text-decoration:none;}
+		a:visited {color:#aaa;}
+		a:hover {color:aqua;}
+		a:focus {color:aqua;}
+		a:active {color:aqua;}
+
+		section a:link {color:#666;}
+		section a:visited {color:#666;}
+		section a:hover {color:red;}
+		section a:focus {color:red;}
+		section a:active {color:red;}
+		
+		nav a:link, nav a:visited {color:white; background-color:red; padding:6px;}
+		nav a:hover, nav a:focus, nav a:active {color:lightgoldenrodyellow; background-color:#33364F;}
+	
+
+
     </style>
 </head>
 
@@ -26,7 +90,7 @@
             </nav>
 
         <figure>
-            <img src="images/MalcolmX_1964.jpg">
+            <img src="../Project_2_Alangurli/images/MalcolmX_1964.jpg" alt="Image of Malcolm X">
 
             <figcaption> Activist Malcolm X, advocate for the Black empowerment and the promotion of Islam within the Black community. <time datetime="1964"> 1964</time></figcaption>
         </figure>
@@ -72,11 +136,11 @@
 
         <h4>House of Malcolm X</h4>
         <figure>
-            <img src="images/Malcolm House.jpg">
+            <img src="../Project_2_Alangurli/images/Malcolm House.jpg" alt="Image of Malcolm X house">
             <figcaption><time datetime="1941">1941</time>&ndash;<time datetime="1944">1944</time>, Boston, Massachusetts where Malcom X and his half-sister lived.</figcaption>
         </figure>
 
-        <p>In Lansing, Michigan, a Michigan Historical Marker was erected in <li><time datetime="1975">1975</time> on Malcolm Little's childhood home. The city is also home to El-Hajj Malik El-Shabazz Academy, a public charter school with an Afrocentric focus. The school is located in the building where Little attended elementary school.</p>
+        <p>In Lansing, Michigan, a Michigan Historical Marker was erected in <li><time datetime="1975">1975</time> on Malcolm Little's childhood home. The city is also home to El-Hajj Malik El-Shabazz Academy, a public charter school with an Afrocentric focus. The school is located in the building where Little attended elementary school.</li></p>
 
         <p>Many cities have renamed streets after Malcolm X. In <time datetime="1987">1987</time>, New York mayor Ed Koch proclaimed Lenox Avenue in Harlem to be Malcolm X Boulevard. The name of Reid Avenue in Brooklyn, New York, was changed to Malcolm X Boulevard in <time datetime="1985">1985</time>.Brooklyn also has El Shabazz Playground that was named after him.New Dudley Street, in the Roxbury neighborhood of Boston, was renamed Malcolm X Boulevard in the <time datetime="1990s">1990s</time>. In <time datetime="1997">1997</time>, Oakland Avenue in Dallas, Texas, was renamed Malcolm X Boulevard.Main Street in Lansing, Michigan, was renamed Malcolm X Street in <time datetime="2010">2010</time>.In <time datetime="2016">2016</time>, Ankara, Turkey, renamed the street on which the U.S. is building its new embassy after Malcolm X.</p>
 
@@ -84,14 +148,14 @@
 
         <h4>Historical Maker</h4>
         <figure>
-            <img src="images/Historical Maker_1965.jpg">
+            <img src="../Project_2_Alangurli/images/Historical Maker_1965.jpg" alt="Image of a historical maker made for Malcolm X">
             <figcaption><time datetime="1965">1965</time>,A historical maker for Malcolm X&rsquo;s first home in Omaha, Nebraska, which was then torn down after his death.</figcaption>
         </figure>
 
         <p>The house that once stood at 3448 Pinkney Street in North Omaha, Nebraska, was the first home of Malcolm Little with his birth family. The house was torn down in <time datetime="1965">1965</time> by new owners who did not know of its connection with Malcolm X. The site was listed on the National Register of Historic Places in <time datetime="1984">1984</time>. A Nebraska Historical Marker now marks the site. The Malcolm X—Ella Little-Collins House in the Roxbury section of Boston, Massachusetts, where Malcolm X lived with his half-sister Ella Little-Collins and began getting involved in the Nation of Islam, was added to the National Register of Historic Places in <time datetime="2021">2021</time>.Several archaeological surveys have been performed on the house's grounds, and there are ongoing efforts to preserve the site.</p>
     </section><!-- closes projects -->
     <footer>
-        <p>Text and images from <a href="https://en.wikipedia.org/wiki/Malcolm_X" target="_blank">Wikipedia</a></strong></p>
+        <p>Text and images from <a href="https://en.wikipedia.org/wiki/Malcolm_X" target="_blank">Wikipedia</a></p>
     </footer>
 
  </div><!-- closes wrap -->

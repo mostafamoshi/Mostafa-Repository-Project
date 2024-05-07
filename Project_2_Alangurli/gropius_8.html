@@ -23,6 +23,17 @@
 		header, section, footer {padding:20px 60px;}
 		figure {margin:0;}
 		
+		/*FLOATS */
+		.fr300 {width: 100%; max-width:300px; float:right; margin-left:20px; margin-bottom:20px;}
+		
+		.fr200 {width: 100%; max-width:200px; float:right; margin-left:20px; margin-bottom:20px;}
+		
+		.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+		
 		/* TYPOGRAPHY */
 		body {font-family:arial, helvetica,sans-serif;}
 		h1 {font-size:36px;}
@@ -58,7 +69,7 @@
 
 <body id="top">
     <div id="wrap">
-        <header>
+        <header class="clearfix">
             <nav role="navigation" aria-label="main menu">
                 <ul>
                     <li><a href="#biography">Biography</a></li>
@@ -68,8 +79,8 @@
                 </ul>
             </nav>
 
-        <figure>
-            <img src="images/WalterGropius-1919x200.jpg" alt="Image of Walter Gropius">
+        <figure class="fr200">
+            <img src="images/WalterGropius-1919x200.jpg">
 
                 <figcaption> Architect Walter Gropius, founder of the Bauhaus school of architecture. Photo by Louis Held c. <time datetime="1919"> 1919</time>, probably in Weimar, Germany, just after the foundation of Bauhaus.</figcaption>
             </figure>
@@ -126,8 +137,8 @@
             <h3>Detailed Projects</h3>
 
             <h4>Bauhaus</h4>
-            <figure>
-                <img src="images/Bauhausx300.jpg" alt="Image of Bauhaus">
+            <figure class="fr300">
+                <img src="images/Bauhausx300.jpg">
                 <figcaption><time datetime="1925">1925</time>&ndash;<time datetime="1926">1926</time>, Dessau, Germany, photo by Detlef Mewes</figcaption>
             </figure>
 
@@ -141,8 +152,8 @@
 
 
             <h4>Walter Gropius House</h4>
-            <figure>
-                <img src="images/Walter_Gropius_photo_Gropius_house_Lincoln_MAx300.jpg" alt="Image of Walter Gropius house">
+            <figure class="fr300">
+                <img src="images/Walter_Gropius_photo_Gropius_house_Lincoln_MAx300.jpg">
                 <figcaption><time datetime="1938">1938</time>, Baker Bridge Road, Lincoln, Middlesex County, MA. Photo by Jack E. Boucher &mdash; Library of Congress, Prints and Photograph Division, Historic American Buildings Survey: HABS MASS,9-LIN,16-20 alter Gropius photo</figcaption>
             </figure>
 
@@ -155,8 +166,8 @@
             <blockquote>&ldquo;As to my practice, when I built my first house in the U.S.A. &mdash;which was my own — I made it a point to absorb into my own conception those features of the New England architectural tradition that I found still alive and adequate. This fusion of the regional spirit with a contemporary approach to design produced a house that I would never have built in Europe with its entirely different climatic, technical and psychological background&rdquo; &mdash;<cite>Walter Gropius, Scope of Total Architecture, <time datetime="1956">1956</time></cite></blockquote>
 
             <h4>MetLife Building</h4>
-            <figure>    
-                <img src="images/MetLifeBldgNY.jpg" alt="Image of Metlife Building" style="width:200px;">
+            <figure class="fr200">    
+                <img src="images/MetLifeBldgNY.jpg" style="width:200px;">
                 <figcaption><time datetime="1960">1960</time>-<time datetime="1963">1963</time>, New York, NY.  Photo by <a href="https://en.wikipedia.org/wiki/User:Postdlf" target="_blank">https://en.wikipedia.org/wiki/User:Postdlf</a> <time datetime="2005-10-03">2005-10-03</time>.</figcaption>
             </figure>
 
